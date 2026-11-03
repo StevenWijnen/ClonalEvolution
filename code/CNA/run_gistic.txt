@@ -1,0 +1,34 @@
+conda activate GISTC2
+
+#Primary
+gistic2 gp_gistic2_from_seg \
+  -b /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/GISTIC2/output/primary_full \
+  -seg /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/GISTIC2/input/full_primary.seg \
+  -refgene /home/s.wijnen/packages/GISTC2/GISTIC2.0/gistic2.refgene.hg38.UCSC.add_miR.160920.mat \
+  -genegistic 1 \
+  -broad 1 \
+  -conf 0.75 \
+  -savegene 1 \
+  -armpeel 1 
+
+#LN
+gistic2 gp_gistic2_from_seg \
+  -b /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/GISTIC2/output/ln_met_full \
+  -seg /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/GISTIC2/input/full_ln_met.seg \
+  -refgene /home/s.wijnen/packages/GISTC2/GISTIC2.0/gistic2.refgene.hg38.UCSC.add_miR.160920.mat \
+  -genegistic 1 \
+  -broad 1 \
+  -conf 0.75 \
+  -savegene 1 \
+  -armpeel 1 
+
+#VanAllen
+gistic2 gp_gistic2_from_seg \
+  -b /DATA/s.wijnen/Projects/ClonalEvolution/output/GISTIC/vanAllen/output \
+  -seg /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/GISTIC2/vanAllen/data_cna_hg19.seg \
+  -refgene /home/s.wijnen/packages/GISTC2/GISTIC2.0/hg19.mat \
+  -genegistic 1 \
+  -broad 1 \
+  -conf 0.75 \
+  -savegene 1 \
+  -armpeel 1 

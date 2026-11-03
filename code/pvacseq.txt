@@ -1,0 +1,11 @@
+pvacseq run \
+  /DATA/s.wijnen/Projects/ClonalEvolution/output/ln_met/annotation/mutect2/S2697Nr10_vs_S2697Nr130/S2697Nr10_vs_S2697Nr130.mutect2.pvac.vcf \
+  PRADO_119_S2697Nr10 \
+  "HLA-A*02:01,HLA-A*03:01,HLA-B*07:02,HLA-C*07:02" \
+  NetMHCpan NetMHCpanEL \
+  /DATA/s.wijnen/Projects/ClonalEvolution/clean_code/ClonalEvolution/output/pvacseq/PRADO_119_S2697Nr10 \
+  --normal-sample-name PRADO_119_S2697Nr130 \
+  --minimum-fold-change 1 \
+  --binding-threshold 500 \
+  --iedb-install-directory /DATA/s.wijnen/Projects/mhc_i \
+  -e1 8,9,10,11
